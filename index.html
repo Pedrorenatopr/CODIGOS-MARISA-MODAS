@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <img src="/vestido-branco-feminino-com-fenda-lateral-nula-manga-capa-7u4ukgxky6.jpg" alt="">
+        <img src="/vestido-branco-feminino-com-fenda-lateral-nula-manga-capa-7u4ukgxky6.jpg" alt="">
+        <img src="/vestido-branco-feminino-com-fenda-lateral-nula-manga-capa-7u4ukgxky6.jpg" alt="">
+        <img src="/vestido-branco-feminino-com-fenda-lateral-nula-manga-capa-7u4ukgxky6.jpg" alt="">
+    </div>
+
+    <script>
+        document.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+});
+
+// Impedir toque longo em dispositivos móveis
+document.addEventListener("mousedown", function(event) {
+    if (event.target.tagName === "IMG") {
+        event.preventDefault();
+    }
+});
+
+document.addEventListener("touchstart", function(event) {
+    if (event.target.tagName === "IMG") {
+        event.preventDefault();
+    }
+});
+
+// Bloquear arrastar imagens
+document.addEventListener("dragstart", function(event) {
+    if (event.target.tagName === "IMG") {
+        event.preventDefault();
+    }
+});
+
+
+    </script>
+    
+</body>
+</html>
