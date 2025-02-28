@@ -1,8 +1,21 @@
+body {
+    background-color: black;
+    color: green;
+}
+
 div {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 img {
     width: 300px;
+    border-radius: 8px;
+
+}
+
+.card {
+    display: grid;
+
 }
