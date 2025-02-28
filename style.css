@@ -1,7 +1,12 @@
+/* Impedir seleção de texto */
 body {
-    background-color: black;
-    color: green;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
+
 
 div {
     display: flex;
@@ -12,6 +17,8 @@ div {
 img {
     width: 300px;
     border-radius: 8px;
+    pointer-events: none;
+
 
 }
 
