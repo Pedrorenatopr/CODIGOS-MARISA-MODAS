@@ -29,29 +29,29 @@
     </div>
 
     <script>
-        document.addEventListener("contextmenu", function(event) {
-    event.preventDefault();
-});
+            document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+        });
 
-// Impedir toque longo em dispositivos móveis
-document.addEventListener("mousedown", function(event) {
-    if (event.target.tagName === "IMG") {
-        event.preventDefault();
-    }
-});
+        // Impedir toque longo em dispositivos móveis
+        document.addEventListener("mousedown", function(event) {
+            if (event.target.tagName === "IMG") {
+                event.preventDefault();
+            }
+        });
 
-document.addEventListener("touchstart", function(event) {
-    if (event.target.tagName === "IMG") {
-        event.preventDefault();
-    }
-});
+        document.addEventListener("touchstart", function(event) {
+            if (event.target.tagName === "IMG") {
+                event.preventDefault();
+            }
+        });
 
-// Bloquear arrastar imagens
-document.addEventListener("dragstart", function(event) {
-    if (event.target.tagName === "IMG") {
-        event.preventDefault();
-    }
-});
+        // Bloquear arrastar imagens
+        document.addEventListener("dragstart", function(event) {
+            if (event.target.tagName === "IMG") {
+                event.preventDefault();
+            }
+        });
 
 
     </script>
